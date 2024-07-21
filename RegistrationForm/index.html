@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form name="form1" id="form1" class="formContainer">
+        <div class="inputContainer">
+            <input type="text" name="fname" id="fname" pattern="[A-Za-z\s]+" title="Please enter your first name"
+                value="" placeholder="Enter First Name" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" name="lname" id="lname" pattern="[A-Za-z\s]+" title="Please enter your last name"
+                value="" placeholder="Enter Last Name" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="inputContainer">
+            <input type="date" name="dob" id="dob" value="" title="Please enter your date of birth"
+                placeholder="Enter Date of Birth" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="inputContainer">
+            <input type="tel" name="phn" id="phn" value="" pattern="[0-9]{10}" title="Please enter your phone number"
+                maxlength="10" placeholder="Enter Phone Number" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="inputContainer">
+            <input type="email" name="mail" id="mail" value="" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}"
+                title="Please enter a valid email id" placeholder="Enter Email Id" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="inputContainer">
+            <input type="password" name="pwd" id="pwd" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="Enter Password" title="Please enter a valid password" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <div class="listContainer">
+            Password should contain atleast
+            <ul>
+                <li>one number</li>
+                <li>one lowercase letter</li>
+                <li>one uppercase letter</li>
+                <li>specify 8 characters or more</li>
+            </ul>
+        </div>
+
+        <div class="inputContainer">
+            <input type="password" name="cpwd" id="cpwd" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="Confirm Password" title="Please confirm your password" required />
+            <span class="mandatory">*</span>
+        </div>
+
+        <span id="error1"></span>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

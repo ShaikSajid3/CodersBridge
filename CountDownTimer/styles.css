@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+}
+
+.container,
+#card {
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    background-color: lemonchiffon;
+}
+
+#show {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type='button'] {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+}
+
+#resetbtn {
+    background-color: plum;
+}
+
+#resetbtn:hover {
+    background-color: white;
+    color: coral;
+}
+
+#restartbtn {
+    background-color: darkcyan;
+}
+
+#restartbtn:hover {
+    background-color: white;
+    color: darkcyan;
+}
+
+#stopbtn {
+    background-color: red;
+}
+
+#card {
+    display: none;
+}
+
+#card #timer {
+    border-radius: 5px;
+}
+
+#card #setbtn {
+    background-color: orangered;
+}

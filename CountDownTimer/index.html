@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+    <h1>Count Down Timer</h1>
+    <div id="card">
+        <h1>Set Time</h1>
+        <input type="text" id="timer" pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$" placeholder="HH:MM:SS"
+            required />
+        <input type="button" id="setbtn" value="Set" />
+    </div><br />
+    <div class="container">
+        <label id="show">00:00:00</label>
+        <input type="button" id="resetbtn" value="Reset" />
+        <input type="button" id="restartbtn" value="Restart" /><br />
+        <input type="button" id="stopbtn" value="Stop" />
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
